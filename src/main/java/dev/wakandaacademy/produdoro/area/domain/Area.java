@@ -1,4 +1,4 @@
-package dev.wakandaacademy.produdoro.projeto.domain;
+package dev.wakandaacademy.produdoro.area.domain;
 
 import java.util.UUID;
 
@@ -16,15 +16,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Getter
-@Document(collection = "Projeto")
-public class Projeto {
+@Document(collection = "Area")
+public class Area {
 	@Id
-	private UUID idProjeto;
+	private UUID idArea;
 	private String nome;
 	private String descricao;
 	@Indexed
 	private UUID idUsuario;
-	@Indexed
-	private UUID idArea;
-
 }
