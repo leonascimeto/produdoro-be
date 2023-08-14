@@ -1,1 +1,10 @@
+server:
+  servlet:
+    context-path: /produdoro/api
 
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      uri: ${MONGO_DB_URI:mongodb+srv://leonardo:4dI2YLkTdDYUyeQJ@wakanda.2xgybpc.mongodb.net/wakanda?retryWrites=true&w=majority}
+      auto-index-creation: true
